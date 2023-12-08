@@ -221,7 +221,7 @@ a.main-button-slider {
   font-weight: bold;
   border-radius: 12px;
   padding: 12px 20px;
-  background-color: rgb(150, 92, 255);
+  background-color: #975cff;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -232,14 +232,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #0088e8;
+  background-color: rgb(129, 82, 216);;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #00b4c6;
+  background-color: #7196f2;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -250,7 +250,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #0088e8;
+  background-color: rgb(150, 92, 255);
 }
 
 button.main-button {
@@ -838,7 +838,48 @@ TRY IT ... with or without CENTER CENTER
     margin-top: px;
   }
 }
+/* Beneficios */
 
+.about {
+  text-align: center;
+}
+
+.subtitle {
+  color: #975cff;
+margin-top: 35px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+
+.about__paragraph {
+  line-height: 1.7;
+}
+
+.about__main {
+  padding-top: 80px;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+
+
+.about__icons {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  width: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about__icon {
+  width: 100px;
+}
 /*
 ---------------------------------------------
 about
@@ -854,6 +895,25 @@ about
   #about {
     padding: 20px 0px 120px 0px;
   }
+
+  .about__main {
+    gap: 2em;
+    margin-bottom: 30px;
+}
+.about__title{
+  font-size: 20px;
+}
+.about__icons:last-of-type {
+    grid-column: 1/-1;
+}
+
+.about2__main {
+    gap: 2em;
+}
+
+.about2__icons:last-of-type {
+    grid-column: 1/-1;
+}
 }
 
 #about .right-text {
@@ -1374,7 +1434,7 @@ footer .copyright {
     margin-top: 15px;
   }
 }
-
+/* violeta #975cff  verde #4cbd97 amarillo #ffe91f negro # 111113  Color alternativo violeta #7196f2*/
 /* 
 ---------------------------------------------
 preloader
@@ -1382,7 +1442,8 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(145deg, #00b4c6 0%, #0088e8 100%);
+  background-image: linear-gradient(145deg, #4cbd97 0%, #111113 20%, #975cff 50%, #ffe91f 100%);
+  
   left: 0;
   right: 0;
   top: 0;
