@@ -9,7 +9,7 @@
     <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Life2Better</title>
+    <title>Life2Better - FIBARO Argentina</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -41,7 +41,11 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="#" class="logo">Life2Better</a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/pngblanco.png" alt="Logo Blanco" id="whiteLogo" class="logo-image">
+                             <img src="assets/images/pngnegro.png" alt="Logo Oscuro" id="darkLogo" class="logo-image">
+                          
+                          </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
@@ -61,6 +65,30 @@
             </div>
         </div>
     </header>
+    <script>
+        // Obtén los elementos de las imágenes
+        const whiteLogo = document.getElementById('whiteLogo');
+        const darkLogo = document.getElementById('darkLogo');
+      
+        // Manejador de eventos de scroll
+        window.addEventListener('scroll', function() {
+          // Altura en la que deseas cambiar el logo (ajusta según sea necesario)
+          const scrollHeightToChangeLogo = 100;
+      
+          // Cambia la visibilidad de las imágenes según la altura de scroll
+          if (window.scrollY > scrollHeightToChangeLogo) {
+            darkLogo.classList.add('dark-logo');
+            darkLogo.classList.remove('white-logo');
+            whiteLogo.classList.add('white-logo');
+            whiteLogo.classList.remove('dark-logo');
+          } else {
+            darkLogo.classList.add('white-logo');
+            darkLogo.classList.remove('dark-logo');
+            whiteLogo.classList.add('dark-logo');
+            whiteLogo.classList.remove('white-logo');
+          }
+        });
+      </script>
     <!-- ***** Header Area End ***** -->
 
 
@@ -94,21 +122,21 @@
     <!-- *****Beneficios***** -->
 
     <section id="soluciones" class="container about">
-        <h2 class="subtitle">Documentación Necesaria </h2>
+        <h2 class="subtitle">Caracteristicas principales </h2>
         <p class="about__paragraph"></p>
 
         <div class="about__main">
             <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
                 data-aos-delay="0" class="about__icons">
-                <img src="./images/licencia-de-conducir.png" class="about__icon">
+                <img src="./assets/images/Iconos_fibaro_Inalambrico.png " class="about__icon">
                 <h3 class="about__title">Inálambrico</h3>
                 <p class="about__paragrah">Sin Cables, sin romper paredes. FIBARO es inalámbrico, moderno y seguro.
                     El protocolo Z-Wave, permite agregar o cambiar dispositivos de manera completamente no invasiva.</p>
             </article>
 
             <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                data-aos-delay="500" class="about__icons">
-                <img src="./images/libreta-de-direcciones.png" class="about__icon">
+                data-aos-delay="250" class="about__icons">
+                <img src="./assets/images/Iconos_fibaro_modular.png" class="about__icon">
                 <h3 class="about__title">Modular</h3>
                 <p class="about__paragrah"> FIBARO es la solución perfecta, que
                     se adapta a distintas posibilidades. Permitiendo crecer a futuro, modificar, o rediseñar tu casa.
@@ -116,16 +144,16 @@
             </article>
 
             <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                data-aos-delay="1000" class="about__icons">
-                <img src="./images/documento.png" style="width: 90px;" class="about__icon">
+                data-aos-delay="500" class="about__icons">
+                <img src="./assets/images/Iconos_fibaro_remoto.png" style="width: 90px;" class="about__icon">
                 <h3 class="about__title">Remoto</h3>
                 <p class="about__paragrah">Gracias a la aplicación móvil podés estár en contacto
                     constante con tu casa, controlándola y gestionándola desde cualquier lugar del mundo.</p>
             </article>
 
             <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                data-aos-delay="1500" class="about__icons">
-                <img src="./images/documento.png" style="width: 90px;" class="about__icon">
+                data-aos-delay="750" class="about__icons">
+                <img src="./assets/images/Iconos_fibaro_complementario.png" style="width: 90px;" class="about__icon">
                 <h3 class="about__title">Complementario</h3>
                 <p class="about__paragrah">FIBARO es compatible con cientos de fabricantes de
                     nivel mundial. Un ecosistema en el cual se integran fácilmente dispositivos de otros fabricantes y
@@ -133,16 +161,16 @@
             </article>
 
             <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                data-aos-delay="2000" class="about__icons">
-                <img src="./images/documento.png" style="width: 90px;" class="about__icon">
+                data-aos-delay="1000" class="about__icons">
+                <img src="./assets/images/Iconos_fibaro_compatible.png" style="width: 90px;" class="about__icon">
                 <h3 class="about__title">Compatible</h3>
                 <p class="about__paragrah">FIBARO es compatible con instalaciones eléctricas,
                     teclas y artefactos de luz convencionales. Un sistema que se adapta a tu casa.</p>
             </article>
 
             <article data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                data-aos-delay="2500" class="about__icons">
-                <img src="./images/documento.png" style="width: 90px;" class="about__icon">
+                data-aos-delay="1250" class="about__icons">
+                <img src="./assets/images/Iconos_fibaro_seguro.png" style="width: 90px;" class="about__icon">
                 <h3 class="about__title">Seguro</h3>
                 <p class="about__paragrah">Tus datos y el acceso a tu casa estarán protegidos con
                     la misma tecnología que se utiliza para proteger el acceso a tu cuenta bancaria.</p>
@@ -158,19 +186,15 @@
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="assets/images/WhatsApp Image 2023-12-11 at 14.45.06.jpeg" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
                     <div class="left-heading">
-                        <h5>Vivamus sodales nisi id ante molestie venenatis</h5>
+                        <h5>VIVÍ LA EXPERIENCIA DE TU CASA INTELIGENTE</h5>
                     </div>
                     <div class="left-text">
-                        <p>This template is <a href="#">last updated on 20 August 2019 </a>for main menu drop-down arrow
-                            and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia,
-                            nisl sit amet tristique condimentum. <br><br>
-                            Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices
-                            malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi.</p>
-                        <a href="#about2" class="main-button">Discover More</a>
+                        <p>El sistema de hogar inteligente FIBARO, fue diseñado para controlar la iluminación, calefacción, alarmas, continas, puertas, ventanas, sistemas de riego y muchos otros sistemas.</p>
+                        <a href="#about2" class="main-button">Contactate</a>
                     </div>
                 </div>
             </div>
@@ -190,22 +214,22 @@
             <div class="row">
                 <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
                     <div class="left-heading">
-                        <h5>Curabitur aliquam eget tellus id porta</h5>
+                        <h5>¿SOS ARQUITECTO O DESARROLLADOR?</h5>
                     </div>
-                    <p>Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.
+                    <p>Somos especialistas en tecnología para casas y edificios inteligentes. Ofrecemos soluciones que se adaptan a cada proyecto, beneficiando al inversor y al consumidor final. Conocé más sobre nuestra propuesta. Agregá valor a tus proyectos.
                     </p>
                     <ul>
                         <li>
                             <img src="assets/images/about-icon-01.png" alt="">
                             <div class="text">
-                                <h6>Nulla ultricies risus quis risus</h6>
+                                <h6>Oferta mas atractiva</h6>
                                 <p>You can use this website template for commercial or non-commercial purposes.</p>
                             </div>
                         </li>
                         <li>
                             <img src="assets/images/about-icon-02.png" alt="">
                             <div class="text">
-                                <h6>Donec consequat commodo purus</h6>
+                                <h6>Aumento del estánder de tus proyectos</h6>
                                 <p>You have no right to re-distribute this template as a downloadable ZIP file on any
                                     website.</p>
                             </div>
@@ -213,7 +237,7 @@
                         <li>
                             <img src="assets/images/about-icon-03.png" alt="">
                             <div class="text">
-                                <h6>Sed placerat sollicitudin mauris</h6>
+                                <h6>Nuevas poisibilidades de diseñar interiores mas funcioanles </h6>
                                 <p>If you have any question or comment, please <a rel="nofollow"
                                         href="https://templatemo.com/contact">contact</a> us on TemplateMo.</p>
                             </div>
@@ -222,7 +246,7 @@
                 </div>
                 <div class="right-image col-lg-7 col-md-12 col-sm-12 mobile-bottom-fix-big"
                     data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="assets/images/Future-Home-Hologaphic-Image-1.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
             </div>
         </div>
@@ -233,70 +257,64 @@
     <!-- ***** Features Small Start ***** -->
     <section class="section" id="services">
         <div class="container">
+            <h3 class="centered-heading">CARACTERÍSTICAS DEL SISTEMA FIBARO</h3>
             <div class="row">
                 <div class="owl-carousel owl-theme">
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">First Box Service</h5>
-                        <p>Aenean vulputate massa sed neque consectetur, ac fringilla quam aliquet. Sed a enim nec eros
-                            tempor cursus at id libero.</p>
-                        <a href="#" class="main-button">Read More</a>
+                        <h5 class="service-title">Control de iluminación</h5>
+                        <p>Ajusta la intensidad y el color de las luces según tu estado de ánimo o la ocasión, todo desde la comodidad de tu dispositivo móvil.</p>
+                       
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-02.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">Second Box Title</h5>
-                        <p>Pellentesque vitae urna ut nisi viverra tristique quis at dolor. In non sodales dolor, id
-                            egestas quam. Aliquam erat volutpat. </p>
-                        <a href="#" class="main-button">Discover More</a>
+                        <h5 class="service-title">Control de calefacción</h5>
+                        <p>Controlar la calefacción te permite personalizar la temperatura de cada habitación, ahorrando energía y adaptándose a tus preferencias. </p>
+                        
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-03.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">Third Title Box</h5>
-                        <p>Quisque finibus libero augue, in ultrices quam dictum id. Aliquam quis tellus sit amet urna
-                            tincidunt bibendum.</p>
-                        <a href="#" class="main-button">More Detail</a>
+                        <h5 class="service-title">Control de electrodomesticos</h5>
+                        <p>Enciende y apaga dispositivos, programa ciclos y recibe notificaciones para un hogar más eficiente y conveniente.</p>
+                        
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-02.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">Fourth Service Box</h5>
-                        <p>Fusce sollicitudin feugiat risus, tempus faucibus arcu blandit nec. Duis auctor dolor eu
-                            scelerisque vestibulum.</p>
-                        <a href="#" class="main-button">Read More</a>
+                        <h5 class="service-title">Control de portones</h5>
+                        <p>bre y cierra tu acceso principal de manera segura y cómoda, proporcionando un nivel adicional de seguridad y conveniencia.</p>
+                        
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">Fifth Service Title</h5>
-                        <p>Curabitur aliquam eget tellus id porta. Proin justo sapien, posuere suscipit tortor in,
-                            fermentum mattis elit.</p>
-                        <a href="#" class="main-button">Discover</a>
+                        <h5 class="service-title">Control de riego</h5>
+                        <p>Ajusta la frecuencia y la duración para optimizar el consumo de agua y mantener un paisaje exuberante.</p>
+                       
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-03.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">Sixth Box Title</h5>
-                        <p>Ut nibh velit, aliquam vitae pellentesque nec, convallis vitae lacus. Aliquam porttitor urna
-                            ut pellentesque.</p>
-                        <a href="#" class="main-button">Detail</a>
+                        <h5 class="service-title">Control de cortinas</h5>
+                        <p>Abre y cierra tus cortinas con facilidad, creando ambientes confortables y adaptados a tus necesidades.</p>
+                       
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
-                        <h5 class="service-title">Seventh Title Box</h5>
-                        <p>Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada
-                            odio. Donec non quam.</p>
-                        <a href="#" class="main-button">Read More</a>
+                        <h5 class="service-title">Control multimedia</h5>
+                        <p> La música hasta la sincronización perfecta de dispositivos, disfruta de un entretenimiento sin complicaciones en tu hogar inteligente.</p>
+                       
                     </div>
                 </div>
             </div>
@@ -312,13 +330,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>Descubre mas de lo que somos y encuentra tus preguntas</h2>
                     </div>
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="section-heading">
-                        <p>Vivamus venenatis eu mi ac mattis. Maecenas ut elementum sapien. Nunc euismod risus ac
-                            lobortis congue. Sed erat quam.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -326,194 +343,81 @@
 
             <div class="row">
                 <div class="left-text col-lg-6 col-md-6 col-sm-12">
-                    <h5>Class aptent taciti sociosqu ad litora torquent per conubia</h5>
+                    <h5>FIBARO </h5>
                     <div class="accordion-text">
-                        <p>Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies
-                            risus quis risus scelerisque, a aliquam tellus maximus. Cras pretium nulla ac convallis
-                            iaculis. Aenean bibendum erat vitae odio sodales, in facilisis tellus volutpat.</p>
-                        <p>Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex.
-                            Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non
-                            tincidunt dui. Lorem ipsum dolor sit amet.</p>
-                        <span>Email: <a href="#">email@company.com</a><br></span>
-                        <a href="#contact-us" class="main-button">Contact Us</a>
+                        <p>FIBARO es una marca internacional y Life2Better es el distribuidor general en Argentina, Paraguay y Uruguay.
+
+                            Te ofrecemos productos homologados, instalación, soporte técnico y postventa del máximo nivel. Tenemos ofertas a la medida de cada necesidad. Se acabó la domótica costosa, en manos de pocos instaladores, sin presencia ni soporte oficial.
+                            
+                            Olivdate de la vieja domótica. Conocé la nueva Casa Inteligente FIBARO.</p>
+                        <span>Email: <a href="#">FIBARO@gmail.com</a><br></span>
+                        <a href="#contact-us" class="main-button">Contactanos</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="accordions is-first-expanded">
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>First Common Question</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
+                    <article  class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿CUALES SON LOS COMPONENTES DEL SISTEMA FIBARO?
+                                <span class="questions__arrow">
+                                    <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros,
-                                        condimentum consequat ex. Suspendisse potenti.
-                                        <br><br>
-                                        Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut
-                                        eros rutrum sodales. Aliquam erat volutpat.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Second Question Answer</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
+                            </h3>
+    
+                            <p class="questions__show">Sensores (ej:oler, ver, tocar, escuchar, etc.), Home center 2, Home center Lite, Aplicacion nativa apra smartphones y tablets, actuadores (ej:armar, prender, hablar)</p>
+                        </div>
+                    </article>
+    
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿QUE ES EL HOGAR INTELIGENTE FIBARO?
+    
+                                <span class="questions__arrow">
+                                    <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis,
-                                        tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor
-                                        vestibulum at a ante.
-                                        <br><br>
-                                        Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor,
-                                        eu luctus orci sagittis in. In blandit fringilla mollis.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Third Answer for you</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
+                            </h3>
+    
+                            <p class="questions__show">El sistema de hogar inteligente FIBARO, fue diseñado para controlar la iluminación, calefacción, alarmas, continas, puertas, ventanas, sistemas de riego y muchos otros sistemas.</p>
+                        </div>
+                    </article>
+    
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿SOS ARQUITECTO O DESARROLLADOR?
+                                <span class="questions__arrow">
+                                    <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus
-                                        pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices
-                                        dignissim.
-                                        <br><br>
-                                        Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus
-                                        quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio
-                                        rhoncus pharetra.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Fourth Question Asked</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
+                            </h3>
+    
+                            <p class="questions__show">Somos especialistas en tecnología para casas y edificios inteligentes. Ofrecemos soluciones que se adaptan a cada proyecto, beneficiando al inversor y al consumidor final. Conocé más sobre nuestra propuesta. Agregá valor a tus proyectos.</p>
+                        </div>
+                    </article>  
+
+                    <article class="questions__padding">
+                        <div class="questions__answer">
+                            <h3 class="questions__title">¿QUERES FIBARO EN TU CASA?
+                                <span class="questions__arrow">
+                                    <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet
-                                        sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi,
-                                        id sollicitudin diam ex at nisi.
-                                        <br><br>
-                                        Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis.
-                                        Praesent at sem in massa iaculis pharetra.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Fifth Ever Question</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien
-                                        elit, mollis ut ultricies quis, fermentum nec ante.
-                                        <br><br>
-                                        Sed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum
-                                        lectus, non sagittis ante euismod eu.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Sixth Sense Question</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Suspendisse potenti. Ut dapibus leo ut massa vulputate semper. Pellentesque
-                                        maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum
-                                        sodales. Aliquam erat volutpat.</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                            </h3>
+    
+                            <p class="questions__show">Incorporar domótica FIBARO incrementa la seguridad, reduce el consumo energético, y aumenta el confort al máximo nivel.
+                                Así estés en obra o en tu casa habitada, incorporar FIBARO es más fácil de lo que pensás.
+                                
+                                ¡No te quedes con la duda! Contactanos, te ofrecemos asesoría sin cargo.</p>
+                        </div>
+                    </article>  
+                
                 </div>
             </div>
         </div>
     </section>
+
+    
     <!-- ***** Frequently Question End ***** -->
 
 
-    <!-- ***** Contact Us Start ***** -->
-    <section class="section" id="contact-us">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- ***** Contact Map Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div id="map">
-                        <!-- How to change your own map point
-                           1. Go to Google Maps
-                           2. Click on your location point
-                           3. Click "Share" and choose "Embed map" tab
-                           4. Copy only URL and paste it within the src="" field below
-                    -->
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907"
-                            width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <!-- ***** Contact Map End ***** -->
-
-                <!-- ***** Contact Form Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <fieldset>
-                                        <input name="name" type="text" id="name" placeholder="Full Name" required=""
-                                            class="contact-field">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <fieldset>
-                                        <input name="email" type="text" id="email" placeholder="E-mail" required=""
-                                            class="contact-field">
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <textarea name="message" rows="6" id="message" placeholder="Your Message"
-                                            required="" class="contact-field"></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Send It</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- ***** Contact Form End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us End ***** -->
+    
+    
 
 
     <!-- ***** Footer Start ***** -->
@@ -521,17 +425,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12">
-                    <p class="copyright">Copyright &copy; 2020 Art Factory Company
+                    <p class="copyright">Copyright &copy; 2023 FIBARO 
 
-                        . Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+                        
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <ul class="social">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -540,6 +443,8 @@
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
+<!-- questions -->
+    <script src="assets/js/questions.js"></script>
 
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
