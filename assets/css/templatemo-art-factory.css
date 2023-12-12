@@ -221,7 +221,7 @@ a.main-button-slider {
   font-weight: bold;
   border-radius: 12px;
   padding: 12px 20px;
-  background-color: #975cff;
+  background-color: #47af7e;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -232,14 +232,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: rgb(129, 82, 216);;
+  background-color: #7196f2;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #7196f2;
+  background-color: #47af7e;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -250,7 +250,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: rgb(150, 92, 255);
+  background-color: #7196f2;
 }
 
 button.main-button {
