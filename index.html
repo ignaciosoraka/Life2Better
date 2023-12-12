@@ -43,9 +43,9 @@
                         <!-- ***** Logo Start ***** -->
                         <a href="#" class="logo">
                             <img src="assets/images/pngblanco.png" alt="Logo Blanco" id="whiteLogo" class="logo-image">
-                             <img src="assets/images/pngnegro.png" alt="Logo Oscuro" id="darkLogo" class="logo-image">
-                          
-                          </a>
+                            <img src="assets/images/pngnegro.png" alt="Logo Oscuro" id="darkLogo" class="logo-image">
+
+                        </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
@@ -69,26 +69,34 @@
         // Obtén los elementos de las imágenes
         const whiteLogo = document.getElementById('whiteLogo');
         const darkLogo = document.getElementById('darkLogo');
-      
+
+        // Función para cambiar la visibilidad de los logos
+        function updateLogoVisibility() {
+            // Altura en la que deseas cambiar el logo (ajusta según sea necesario)
+            const scrollHeightToChangeLogo = 100;
+
+            // Cambia la visibilidad de las imágenes según la altura de scroll
+            if (window.scrollY > scrollHeightToChangeLogo) {
+                darkLogo.classList.add('dark-logo');
+                darkLogo.classList.remove('white-logo');
+                whiteLogo.classList.add('white-logo');
+                whiteLogo.classList.remove('dark-logo');
+            } else {
+                darkLogo.classList.add('white-logo');
+                darkLogo.classList.remove('dark-logo');
+                whiteLogo.classList.add('dark-logo');
+                whiteLogo.classList.remove('white-logo');
+            }
+        }
+
+        // Ejecuta la función al cargar la página
+        updateLogoVisibility();
+
         // Manejador de eventos de scroll
-        window.addEventListener('scroll', function() {
-          // Altura en la que deseas cambiar el logo (ajusta según sea necesario)
-          const scrollHeightToChangeLogo = 100;
-      
-          // Cambia la visibilidad de las imágenes según la altura de scroll
-          if (window.scrollY > scrollHeightToChangeLogo) {
-            darkLogo.classList.add('dark-logo');
-            darkLogo.classList.remove('white-logo');
-            whiteLogo.classList.add('white-logo');
-            whiteLogo.classList.remove('dark-logo');
-          } else {
-            darkLogo.classList.add('white-logo');
-            darkLogo.classList.remove('dark-logo');
-            whiteLogo.classList.add('dark-logo');
-            whiteLogo.classList.remove('white-logo');
-          }
-        });
-      </script>
+        window.addEventListener('scroll', updateLogoVisibility);
+    </script>
+
+    </script>
     <!-- ***** Header Area End ***** -->
 
 
@@ -186,14 +194,17 @@
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/WhatsApp Image 2023-12-11 at 14.45.06.jpeg" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="assets/images/WhatsApp Image 2023-12-11 at 14.45.06.jpeg"
+                        class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
                     <div class="left-heading">
                         <h5>VIVÍ LA EXPERIENCIA DE TU CASA INTELIGENTE</h5>
                     </div>
                     <div class="left-text">
-                        <p>El sistema de hogar inteligente FIBARO, fue diseñado para controlar la iluminación, calefacción, alarmas, continas, puertas, ventanas, sistemas de riego y muchos otros sistemas.</p>
+                        <p>El sistema de hogar inteligente FIBARO, fue diseñado para controlar la iluminación,
+                            calefacción, alarmas, continas, puertas, ventanas, sistemas de riego y muchos otros
+                            sistemas.</p>
                         <a href="#about2" class="main-button">Contactate</a>
                     </div>
                 </div>
@@ -216,37 +227,43 @@
                     <div class="left-heading">
                         <h5>¿SOS ARQUITECTO O DESARROLLADOR?</h5>
                     </div>
-                    <p>Somos especialistas en tecnología para casas y edificios inteligentes. Ofrecemos soluciones que se adaptan a cada proyecto, beneficiando al inversor y al consumidor final. Conocé más sobre nuestra propuesta. Agregá valor a tus proyectos.
+                    <p>Somos especialistas en tecnología para casas y edificios inteligentes. Ofrecemos soluciones que
+                        se adaptan a cada proyecto, beneficiando al inversor y al consumidor final. Conocé más sobre
+                        nuestra propuesta. Agregá valor a tus proyectos.
                     </p>
                     <ul>
                         <li>
-                            <img src="assets/images/about-icon-01.png" alt="">
+                            <img style="height: 60px;" src="assets/images/etiqueta.png" alt="">
                             <div class="text">
                                 <h6>Oferta mas atractiva</h6>
-                                <p>You can use this website template for commercial or non-commercial purposes.</p>
+                                <p>Desde sistemas de iluminación inteligente hasta automatización completa del hogar,
+                                    llevamos tus proyectos a un nivel superior.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/images/about-icon-02.png" alt="">
+                            <img style="height: 60px;" src="assets/images/cohete.png" alt="">
                             <div class="text">
                                 <h6>Aumento del estánder de tus proyectos</h6>
-                                <p>You have no right to re-distribute this template as a downloadable ZIP file on any
-                                    website.</p>
+                                <p>Desde la planificación hasta la implementación, trabajamos contigo para asegurarnos
+                                    de que tus desarrollos destaquen y cumplan con los más altos estándares de calidad.
+                                </p>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/images/about-icon-03.png" alt="">
+                            <img style="height: 60px;" src="assets/images/diseno-de-interiores.png" alt="">
                             <div class="text">
                                 <h6>Nuevas poisibilidades de diseñar interiores mas funcioanles </h6>
-                                <p>If you have any question or comment, please <a rel="nofollow"
-                                        href="https://templatemo.com/contact">contact</a> us on TemplateMo.</p>
+                                <p>Integrando la tecnología en cada rincón, creamos espacios inteligentes que mejoran la
+                                    vida cotidiana. Descubre cómo transformar tus diseños con soluciones innovadoras.
+                                </p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="right-image col-lg-7 col-md-12 col-sm-12 mobile-bottom-fix-big"
                     data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/Future-Home-Hologaphic-Image-1.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="assets/images/Future-Home-Hologaphic-Image-1.jpg"
+                        class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
             </div>
         </div>
@@ -265,56 +282,63 @@
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control de iluminación</h5>
-                        <p>Ajusta la intensidad y el color de las luces según tu estado de ánimo o la ocasión, todo desde la comodidad de tu dispositivo móvil.</p>
-                       
+                        <p>Ajusta la intensidad y el color de las luces según tu estado de ánimo o la ocasión, todo
+                            desde la comodidad de tu dispositivo móvil.</p>
+
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-02.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control de calefacción</h5>
-                        <p>Controlar la calefacción te permite personalizar la temperatura de cada habitación, ahorrando energía y adaptándose a tus preferencias. </p>
-                        
+                        <p>Controlar la calefacción te permite personalizar la temperatura de cada habitación, ahorrando
+                            energía y adaptándose a tus preferencias. </p>
+
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-03.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control de electrodomesticos</h5>
-                        <p>Enciende y apaga dispositivos, programa ciclos y recibe notificaciones para un hogar más eficiente y conveniente.</p>
-                        
+                        <p>Enciende y apaga dispositivos, programa ciclos y recibe notificaciones para un hogar más
+                            eficiente y conveniente.</p>
+
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-02.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control de portones</h5>
-                        <p>bre y cierra tu acceso principal de manera segura y cómoda, proporcionando un nivel adicional de seguridad y conveniencia.</p>
-                        
+                        <p>bre y cierra tu acceso principal de manera segura y cómoda, proporcionando un nivel adicional
+                            de seguridad y conveniencia.</p>
+
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control de riego</h5>
-                        <p>Ajusta la frecuencia y la duración para optimizar el consumo de agua y mantener un paisaje exuberante.</p>
-                       
+                        <p>Ajusta la frecuencia y la duración para optimizar el consumo de agua y mantener un paisaje
+                            exuberante.</p>
+
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-03.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control de cortinas</h5>
-                        <p>Abre y cierra tus cortinas con facilidad, creando ambientes confortables y adaptados a tus necesidades.</p>
-                       
+                        <p>Abre y cierra tus cortinas con facilidad, creando ambientes confortables y adaptados a tus
+                            necesidades.</p>
+
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
                         <h5 class="service-title">Control multimedia</h5>
-                        <p> La música hasta la sincronización perfecta de dispositivos, disfruta de un entretenimiento sin complicaciones en tu hogar inteligente.</p>
-                       
+                        <p> La música hasta la sincronización perfecta de dispositivos, disfruta de un entretenimiento
+                            sin complicaciones en tu hogar inteligente.</p>
+
                     </div>
                 </div>
             </div>
@@ -345,41 +369,48 @@
                 <div class="left-text col-lg-6 col-md-6 col-sm-12">
                     <h5>FIBARO </h5>
                     <div class="accordion-text">
-                        <p>FIBARO es una marca internacional y Life2Better es el distribuidor general en Argentina, Paraguay y Uruguay.
+                        <p>FIBARO es una marca internacional y Life2Better es el distribuidor general en Argentina,
+                            Paraguay y Uruguay.
 
-                            Te ofrecemos productos homologados, instalación, soporte técnico y postventa del máximo nivel. Tenemos ofertas a la medida de cada necesidad. Se acabó la domótica costosa, en manos de pocos instaladores, sin presencia ni soporte oficial.
-                            
+                            Te ofrecemos productos homologados, instalación, soporte técnico y postventa del máximo
+                            nivel. Tenemos ofertas a la medida de cada necesidad. Se acabó la domótica costosa, en manos
+                            de pocos instaladores, sin presencia ni soporte oficial.
+
                             Olivdate de la vieja domótica. Conocé la nueva Casa Inteligente FIBARO.</p>
                         <span>Email: <a href="#">FIBARO@gmail.com</a><br></span>
                         <a href="#contact-us" class="main-button">Contactanos</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <article  class="questions__padding">
+                    <article class="questions__padding">
                         <div class="questions__answer">
                             <h3 class="questions__title">¿CUALES SON LOS COMPONENTES DEL SISTEMA FIBARO?
                                 <span class="questions__arrow">
                                     <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
                             </h3>
-    
-                            <p class="questions__show">Sensores (ej:oler, ver, tocar, escuchar, etc.), Home center 2, Home center Lite, Aplicacion nativa apra smartphones y tablets, actuadores (ej:armar, prender, hablar)</p>
+
+                            <p class="questions__show">Sensores (ej:oler, ver, tocar, escuchar, etc.), Home center 2,
+                                Home center Lite, Aplicacion nativa apra smartphones y tablets, actuadores (ej:armar,
+                                prender, hablar)</p>
                         </div>
                     </article>
-    
+
                     <article class="questions__padding">
                         <div class="questions__answer">
                             <h3 class="questions__title">¿QUE ES EL HOGAR INTELIGENTE FIBARO?
-    
+
                                 <span class="questions__arrow">
                                     <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
                             </h3>
-    
-                            <p class="questions__show">El sistema de hogar inteligente FIBARO, fue diseñado para controlar la iluminación, calefacción, alarmas, continas, puertas, ventanas, sistemas de riego y muchos otros sistemas.</p>
+
+                            <p class="questions__show">El sistema de hogar inteligente FIBARO, fue diseñado para
+                                controlar la iluminación, calefacción, alarmas, continas, puertas, ventanas, sistemas de
+                                riego y muchos otros sistemas.</p>
                         </div>
                     </article>
-    
+
                     <article class="questions__padding">
                         <div class="questions__answer">
                             <h3 class="questions__title">¿SOS ARQUITECTO O DESARROLLADOR?
@@ -387,10 +418,13 @@
                                     <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
                             </h3>
-    
-                            <p class="questions__show">Somos especialistas en tecnología para casas y edificios inteligentes. Ofrecemos soluciones que se adaptan a cada proyecto, beneficiando al inversor y al consumidor final. Conocé más sobre nuestra propuesta. Agregá valor a tus proyectos.</p>
+
+                            <p class="questions__show">Somos especialistas en tecnología para casas y edificios
+                                inteligentes. Ofrecemos soluciones que se adaptan a cada proyecto, beneficiando al
+                                inversor y al consumidor final. Conocé más sobre nuestra propuesta. Agregá valor a tus
+                                proyectos.</p>
                         </div>
-                    </article>  
+                    </article>
 
                     <article class="questions__padding">
                         <div class="questions__answer">
@@ -399,51 +433,92 @@
                                     <img src="./assets/images/arrow.svg" class="questions__img">
                                 </span>
                             </h3>
-    
-                            <p class="questions__show">Incorporar domótica FIBARO incrementa la seguridad, reduce el consumo energético, y aumenta el confort al máximo nivel.
-                                Así estés en obra o en tu casa habitada, incorporar FIBARO es más fácil de lo que pensás.
-                                
+
+                            <p class="questions__show">Incorporar domótica FIBARO incrementa la seguridad, reduce el
+                                consumo energético, y aumenta el confort al máximo nivel.
+                                Así estés en obra o en tu casa habitada, incorporar FIBARO es más fácil de lo que
+                                pensás.
+
                                 ¡No te quedes con la duda! Contactanos, te ofrecemos asesoría sin cargo.</p>
                         </div>
-                    </article>  
-                
+                    </article>
+
                 </div>
             </div>
         </div>
     </section>
 
-    
+
     <!-- ***** Frequently Question End ***** -->
 
-
-    
-    
-
-
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                    <p class="copyright">Copyright &copy; 2023 FIBARO 
-
-                        
+    <!-- ***** formulario inicio  ***** -->
+    <section id="formulario" class="formulario">
+        <div class="content">
+            <div class="box-info">
+                <h1>CONTÁCTATE CON NOSOTROS</h1>
+                <div class="data">
+                    <p style="color: white;"><i class="fa solid fa-phone"></i> +123456789</p>
+                    <p style="color: white;"><i class="fa solid fa-envelope"></i> FIBARO@gmail.com</p>
+                    
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12">
-                    <ul class="social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        
-                    </ul>
+                <div class="links">
+                    <a href="#"><i class="fa brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa brands fa-instagram"></i></a>
+                    
+                    <a href="#"><i class="fa brands fa-linkedin"></i></a>
                 </div>
             </div>
+            <form action="correos.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" required placeholder="Correo electrónico">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="asunto" placeholder="Asunto">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="input-box">
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- ***** formulario final ***** -->
+
+    <!-- ***** Footer Start ***** -->
+  
+    <footer>
+        <div class="footer-content">
+            <div class="logo"><img src="assets/images/pngblanco.png"  class="loguito" alt="Tu Logo"></div>
+            <p>Direccion: Av. Cerviño 3244, C1425 CABA, Buenos Aires, Argentina</p>
+            <p>Teléfono: 0800 222 222</p>
+            <p>WhatsApp: +549123456789</p>
+            <p>Correo: comercial@fibaro.net</p>
+            <ul class="socials">
+                <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                
+                <li><a href="#" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2023 Fibaro.net</p>
         </div>
     </footer>
 
+
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
-<!-- questions -->
+    <!-- questions -->
     <script src="assets/js/questions.js"></script>
 
     <!-- Bootstrap -->

@@ -354,6 +354,7 @@ header
   max-width: 100px; /* Ajusta según tus necesidades */
   height: auto;
   margin-top: 20px;
+  
   transition: opacity 0.5s ease; /* Agrega una transición suave para evitar cambios abruptos */
   position: absolute; /* Nueva propiedad para la clase .logo-image */
   top: 0;
@@ -363,10 +364,12 @@ header
 
 .dark-logo {
   opacity: 1; /* La imagen oscura es visible */
+  transition: opacity 0.5s ease; /* Aplicar la transición cuando cambie la opacidad */
 }
 
 .white-logo {
   opacity: 0; /* La imagen blanca es invisible */
+  transition: opacity 0.5s ease; /* Aplicar la transición cuando cambie la opacidad */
 }
 .header-area .main-nav .logo {
   line-height: 80px;
@@ -1350,66 +1353,347 @@ contact
 --------------------------------------------- 
 */
 
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0 0 0 / .5), rgba(0 0 0 / .5)), url(../images/Captura\ de\ pantalla\ 2023-12-07\ 110644.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 20px;
+  gap: 10px;
+  width: 1000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.box-info {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.box-info>h1 {
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.data>p {
+  font-size: 1rem;
+}
+
+.data>p>i {
+  color: #47af7e;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links>a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background: #47af7e;
+  text-align: center;
+  transition: .1s;
+  border-radius: 5px;
+}
+
+.links>a>i {
+  color: #fffcfc;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+
+}
+
+.input-box {
+  position: relative;
+
+}
+
+.input-box>input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.4);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  transition: .3s;
+  color: #fff;
+  border-radius: 10px;
+
+}
+
+.input-box>input::placeholder,
+.input-box>textarea::placeholder {
+  color: #fffefe;
+
+}
+
+.input-box>input:focus::placeholder,
+.input-box>textarea:focus::placeholder {
+  color: transparent;
+}
+
+.input-box>input:focus,
+.input-box>textarea:focus {
+  border-bottom: 3px solid #47af7e;
+  animation: shake .2s;
+}
+
+.input-box>textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition: .3s;
+  color: #020202;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+}
+
+
+.input-box>i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: rgba(255 255 255 / .3);
+  transition: .3s;
+}
+
+.input-box>input:focus~i {
+  color: #47af7e;
+}
+
+form>button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: #47af7e;
+  color: #fffcfc;
+  border: none;
+  transition: .1s;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+form>button:hover,
+.links>a:hover {
+  background: #2a885c;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+      transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+      transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+      transform: translateX(10px);
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .content {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+  }
+
+  .box-info {
+      gap:15px;
+  }
+
+  .box-info > h1 {
+      font-size: 1.5rem;
+  }
+}
+
 
 /* 
 ---------------------------------------------
 footer
 --------------------------------------------- 
 */
-footer {
-  background-color: #47af7e;
-  padding: 60px 0px;
-}
-
-footer .social {
-  overflow: hidden;
-  text-align: right;
-}
-
-footer .social li {
-  margin: 0px 5px;
-  display: inline-block;
-}
-
-footer .social li a {
-  color: #fff;
-  text-align: center;
-  background-color: #1182c5;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 5px;
-  display: inline-block;
-  font-size: 16px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-footer .social li a:hover {
-  background-color: #0088e8;
-  color: #fff;
-}
-
-footer .copyright {
+.loguito {
+  height: 6rem;
+ margin-left: -10px ;
   margin-top: 10px;
+}
+
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #202020;
+  background-image: url('../images/Landing_Web_aitue_trama\ \(1\).png');
+  height: auto;
+  width: 100%;
+  
+  padding-top: 40px;
+  color: #fff;
+  
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
   font-weight: 400;
-  font-size: 15px;
-  color: #4a4a4a;
-  letter-spacing: 0.88px;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px 15px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 20px;
+  margin-left: -20px;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color:#001A49;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
   text-transform: capitalize;
 }
-
-@media (max-width: 991px) {
-  footer .copyright {
-    text-align: center;
-  }
-  footer .social {
-    text-align: center;
-    margin-top: 15px;
-  }
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
+
+@media (max-width:800px) {
+
+  .footer__title {
+    justify-self: start;
+    margin-bottom: 15px;
+}
+
+.nav--footer {
+    padding-bottom: 30px;
+}
+
+.nav__link--footer {
+    justify-content: space-between;
+}
+
+.footer__inputs {
+    flex-wrap: wrap;
+}
+
+.footer__input {
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.footer__submit {
+    margin-right: auto;
+    margin-left: 0;
+
+
+
+}
+
+.loguito {
+
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente los elementos hijos */
+    align-items: center;
+    /* Centra verticalmente los elementos hijos */
+    margin-left: 0px;
+    height: 70px;
+    ;
+}
+}
+
+
+
+
 /* violeta #975cff  verde #4cbd97 amarillo #ffe91f negro # 111113  Color alternativo violeta #7196f2*/
 /* 
 ---------------------------------------------
