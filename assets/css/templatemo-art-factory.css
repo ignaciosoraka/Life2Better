@@ -189,6 +189,45 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*---Boton flotante wsp---*/
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: float 1s infinite; /* Aplica la animación constantemente */
+}
+
+.whatsapp-button a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+.whatsapp-button img {
+  width: 85px;
+  height: 85px;
+}
+
+@media (max-width: 650px) {
+  .whatsapp-button img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/*---Termina boton---*/
+
 ::selection {
   background: #1182c5;
   color: #fff;
@@ -221,7 +260,7 @@ a.main-button-slider {
   font-weight: bold;
   border-radius: 12px;
   padding: 12px 20px;
-  background-color: #47af7e;
+  background-color: #975cff;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -237,9 +276,9 @@ a.main-button-slider:hover {
 
 a.main-button {
   font-size: 13px;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 12px 20px;
-  background-color: #47af7e;
+  background-color: #975cff;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -1398,7 +1437,7 @@ contact
 }
 
 .data>p>i {
-  color: #47af7e;
+  color: #975cff;
   margin-right: 10px;
   font-size: 25px;
 }
@@ -1414,7 +1453,7 @@ contact
   text-decoration: none;
   width: 40px;
   height: 40px;
-  background: #47af7e;
+  background: #975cff;
   text-align: center;
   transition: .1s;
   border-radius: 5px;
@@ -1466,7 +1505,7 @@ form {
 
 .input-box>input:focus,
 .input-box>textarea:focus {
-  border-bottom: 3px solid #47af7e;
+  border-bottom: 3px solid #975cff;
   animation: shake .2s;
 }
 
@@ -1495,14 +1534,14 @@ form {
 }
 
 .input-box>input:focus~i {
-  color: #47af7e;
+  color: #975cff;
 }
 
 form>button {
   width: 100%;
   padding: 10px;
   outline: none;
-  background: #47af7e;
+  background: #975cff;
   color: #fffcfc;
   border: none;
   transition: .1s;
