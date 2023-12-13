@@ -838,7 +838,7 @@ TRY IT ... with or without CENTER CENTER
   position: relative;
 }
 .welcome-area .header-text img {
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
 }
 @media (max-width: 991px) {
