@@ -1651,7 +1651,7 @@ footer{
   justify-content: center;
   
   margin: 20px;
-  margin-left: -20px;
+  margin-left: 0px;
 }
 .socials li{
   margin: 0 10px;
