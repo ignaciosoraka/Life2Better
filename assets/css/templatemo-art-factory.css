@@ -1390,9 +1390,24 @@ accordions
 
 /* 
 ---------------------------------------------
-contact
+contact y aca abajo el checklist nuevo 
 --------------------------------------------- 
 */
+
+.checkbox-list {
+  display: block;
+  margin-top: 10px;
+}
+
+.checkbox-list label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-list input {
+  margin-right: 5px;
+}
+
 
 .formulario {
   display: flex;
