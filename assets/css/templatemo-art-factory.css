@@ -1509,6 +1509,47 @@ form {
 
 }
 
+/*inicio de desplegable*/
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group select {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.4);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  transition: .3s;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.input-group select::placeholder {
+  color: #fffefe;
+}
+
+.input-group select:focus::placeholder {
+  color: transparent;
+}
+
+.input-group select:focus {
+  border-bottom: 3px solid #975cff;
+
+  
+}
+
+
+
+
+
+
+/*-----fin desplegable---*/
+
 .input-box>input::placeholder,
 .input-box>textarea::placeholder {
   color: #fffefe;

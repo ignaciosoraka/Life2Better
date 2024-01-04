@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
 </head>
 
@@ -485,33 +487,66 @@
             <form action="correos.php" method="POST">
                 <div class="input-box">
                     <input type="text" name="nombre" placeholder="Nombre y apellido" required>
-                    <i class="fa-solid fa-user"></i>
+                    
                 </div>
                 <div class="input-box">
                     <input type="email" name="email" required placeholder="Correo electrónico">
-                    <i class="fa-solid fa-envelope"></i>
+                    
                 </div>
                 <div class="input-box">
-                    <input type="text" name="ciudad" placeholder="Ciudad">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <input type="text" name="provincia" placeholder="Ciudad">
+                    
                 </div>
 
-                <div class="input-box">
-                    <p style="color: white;">
-                        <label> ¿A qué te dedicas?<br>
-                            <span class="checkbox-list" data-name="menu-913">
-                                <label><input type="checkbox" name="menu-913[]" value="Soy consumidor final"> Soy consumidor final</label>
-                                <label><input type="checkbox" name="menu-913[]" value="Soy Integrador de Tecnología"> Soy Integrador de Tecnología</label>
-                                <label><input type="checkbox" name="menu-913[]" value="Soy Arquitecto"> Soy Arquitecto</label>
-                                <label><input type="checkbox" name="menu-913[]" value="Desarrollador/Constructor"> Desarrollador/Constructor</label>
-                                <label><input type="checkbox" name="menu-913[]" value="Otro"> Otro</label>
-                            </span>
-                        </label>
-                    </p>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="custom-form-icon bi-flag"></i>
+                        </span>
+                    </div>
+                    <select name="intereses" id="intereses" required="" class="form-control">
+                        <option value="" style="font-weight: bold;">¿Que estas buscando?:</option>
+                        <option value="Instalar FIBARO en mi casa">Instalar FIBARO en mi casa</option>
+                        <option value="Ser representante">Agregar domótica a mis proyectos</option>
+                        <option value="Capacitarme como instalador">Capacitarme para ser Instalador FIBARO</option>
+                        <option value="Capacitarme como instalador">Cerraduras Digitales</option>
+                        <option value="Capacitarme como instalador">Otro</option>
+                    </select>
                 </div>
-              
+                
+                <div class="input-group mb-4" style="margin:-23px 0px -20px 0px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="custom-form-icon bi-flag"></i>
+                        </span>
+                    </div>
+                    <select name="ocupacion" id="ocupacion" required="" class="form-control">
+                        <option value="" style="font-weight: bold;">¿A que te dedicas?:</option>
+                        <option value="Instalar FIBARO en mi casa">Soy consumidor final</option>
+                        <option value="Ser representante">Soy Integrador de Tecnología</option>
+                        <option value="Capacitarme como instalador">Soy arquitecto</option>
+                        <option value="Capacitarme como instalador">Desarrollador/Constructor</option>
+                        <option value="Capacitarme como instalador">Otro</option>
+                    </select>
+                </div>
+                <div class="input-group mb-4" style="margin:-23px 0px -20px 0px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="custom-form-icon bi-flag"></i>
+                        </span>
+                    </div>
+                    <select name="comoNosConociste" id="comoNosConociste" required="" class="form-control">
+                        <option value="" style="font-weight: bold;">¿Como nos conociste?:</option>
+                        <option value="Instalar FIBARO en mi casa">Buscador de Google</option>
+                        <option value="Ser representante">Redes sociales</option>
+                        <option value="Capacitarme como instalador">Referdio</option>
+                       
+                        <option value="Capacitarme como instalador">Otro</option>
+                    </select>
+                </div>
 
-                <div class="input-box">
+
+                <div class="input-box" style="margin-top: -23px;">
                     <textarea name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
 
                 </div>
