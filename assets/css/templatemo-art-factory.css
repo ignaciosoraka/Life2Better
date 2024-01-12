@@ -263,11 +263,13 @@ a.main-button-slider {
   background-color: #975cff;
   text-transform: uppercase;
   color: #fff;
+ 
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 a.main-button-slider:hover {
@@ -281,16 +283,49 @@ a.main-button {
   background-color: #975cff;
   text-transform: uppercase;
   color: #fff;
+  margin-right: 5px;
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombras */
 }
 
 a.main-button:hover {
   background-color: #7196f2;
 }
+ .whatsapp-button2 {
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 9px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 10px; /* Ajusta el espacio entre los botones */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombras */
+}
+
+
+
+a.whatsapp-button2 {
+  background-color: #25d366; /* Color de WhatsApp */
+  color: #fff;
+}
+
+a.whatsapp-button2:hover {
+  background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+
 
 button.main-button {
   outline: none;
@@ -1008,7 +1043,7 @@ about
 }
 
 #about2 {
-  padding: 120px 0px;
+  padding: 50px 0px;
 }
 
 #about2 .right-image {
@@ -1223,7 +1258,7 @@ accordions
 }
 
 #frequently-question {
-  padding: 120px 0px;
+  padding: 10px 0px;
 }
 
 #frequently-question .section-heading p {
